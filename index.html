@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KyroQR | Custom QR Code Generator | QR code generator online </title>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron&family=Rajdhani&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>KyroQR<br>Generate Your Own QR Easily</h1>
+
+    <input type="text" id="qrText" placeholder="Enter text or URL" />
+
+    <div class="custom-section">
+      <!-- Foreground -->
+      <label>QR Foreground Color:</label>
+      <input type="color" id="fgColor1" value="#000000" />
+
+      <!-- Background -->
+      <label>Background Color:</label>
+      <input type="color" id="bgColor1" value="#ffffff" />
+
+      <!-- QR Style -->
+      <label>QR Style:</label>
+      <select id="qrStyle">
+        <option value="square">Square</option>
+        <option value="dots">Dots</option>
+        <option value="rounded">Rounded</option>
+        <option value="extra-rounded">Extra Rounded</option>
+        <option value="classy">Classy</option>
+        <option value="classy-rounded">Classy Rounded</option>
+      </select>
+
+      <!-- Logo -->
+      <label>Center Logo (optional):</label>
+      <input type="file" id="logoInput" accept="image/*" />
+    </div>
+
+    <button id="generateBtn">Generate QR</button>
+
+    <div id="qr-preview"></div>
+
+    <div id="download-options" style="display:none;">
+      <label>Download Format:</label>
+      <select id="formatSelect">
+        <option value="png">PNG</option>
+        <option value="jpeg">JPEG</option>
+        <option value="jpg">JPG</option>
+        <option value="gif">GIF</option>
+        <option value="pdf">PDF</option>
+      </select>
+      <button id="downloadBtn">Download QR</button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+      <footer>
+    Built With 💜 by <a href="https://venkie07.github.io/profile/" target="_blank">Venkie</a>
+  </footer>
+</body>s
+</html>
